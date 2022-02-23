@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tsifruudiin niilber</title>
+</head>
+<body>
+<script>
+	var number = window.prompt("Too oruul");
+	var s = 0;
+	while(number > 0){
+		s = s + number % 10;
+		number = parseInt(number/10);
+	}
+	document.write("Niilber: "+ s);
+</script>
+</body>
+</html>

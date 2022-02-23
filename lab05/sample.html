@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Yeah yeah yeah !!!</title>
+	<style type="text/css">
+		.calendar {
+			border: 1px solid black;
+			width: 50px;
+			height: 50px;
+			float: left;
+		}
+		.zai {
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+<div id="header"></div>
+<div id="content"></div>
+
+<script>
+	var days = 31;
+	var logic = 0;
+	var aguulagch='';
+	var header='';
+	for(var i = 1; i<=days; i++){
+		if(logic == 7){
+			logic = 0;
+			aguulagch = aguulagch + '<div class="zai"></div>';
+		}
+		aguulagch = aguulagch + '<div class="calendar">'+i+'</div>';
+		logic = logic + 1 ;
+	}
+	document.getElementById("content").innerHTML = aguulagch;
+	//for loop, while, do while
+	var d = new Date();
+	var hour = d.getHours();
+	//document.write(hour);
+	var name = window.prompt("Hello, What's your name?");
+	header = header + "<h1>Hello, "+name+"</h1>";
+	document.getElementById("header").innerHTML = header;
+	/* document.write('<h2>');
+	if(hour < 12){
+		document.write("Good morning");
+	} else if (hour < 18){
+		document.write("Good afternoon");
+	} else {
+		document.write("Untaachee");
+	}
+	document.write('</h2>');*/
+	//document.write('Hello World');
+	var haha = 45;
+	var hoho = 'jav'; //int, string, boolean, null, undefined
+
+	//var nas = window.prompt('Hello, How old are you?');
+
+	/* if(nas < 18){
+		document.write("This site is horror site. You are too young to enter this site.");
+	} else {
+		document.write("Welcome");
+	}*/ 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+* {
+    font-family: Tahoma;
+    font-size: 40px;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: row;
+    height: 100vm;
+
+}
+
+.A {
+    display: flex;
+    width: 100px;
+    height: 150px;
+    border-left: 10px dotted #D0D0FF;
+    background-color: #eeeff2;
+    align-items: flex-start;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.B {
+    display: flex;
+    width: 100px;
+    height: 150px;
+    border-left: 10px dotted #D0D0FF;
+    background-color: #eeeff2;
+    align-items: flex-start;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+.F {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /* display: inline-block; */
+    width: 100px;
+    height: 150px;
+    border-left: 10px dotted #D0D0FF;
+    background-color: #eeeff2;
+    padding-left: 10px;
+
+}
+
+
+.A:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+.B:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+.F:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+
+/* .zai {
+    display: flex;
+    height: 64vh;
+    background-color: black;
+} */

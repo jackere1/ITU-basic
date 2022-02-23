@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	var wolf=25;
+	var bunny=18;
+	var speed = wolf - bunny;
+	var dis=window.prompt("zaig oruulna uu?(kilometers): ");
+	dis = dis * 1000;
+	var seconds = parseInt(dis/speed*3600/1000);
+	var minutes = parseInt(seconds/60);
+	var hours = parseInt(minutes/60);
+	minutes = minutes - hours * 60;
+	seconds = seconds - hours * 3600 - minutes * 60;
+	document.write("Guitseh hugatsaaa: "+hours + " tsag " + minutes +" minut " + seconds + " sekund");
+</script>
+</body>
+</html>

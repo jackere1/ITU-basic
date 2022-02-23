@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <title>Hangman</title>
+</head>
+<body>
+<div class="container">
+  <h1 class="text-center">Киног таацгаая</h1>
+  <div class="float-right">Буруу хариултууд: 5-аас <span id="mist">0</span></div>
+  <div class="text-center">
+    <p class="question">Asuultuud</p>
+    <p id="answer">answer end irne</p>
+    <div class="keyboard"></div>
+    <button class="btn btn-info" onclick="reset()">Дахин эхлэх</button>
+  </div>
+</div>
+
+<script>
+  var hariult = ["ар хударга","микроны босс","дүүлэн нис","гурван найз","сэргээш"];
+
+let answer = '';
+let maxWrong = 6;
+let mistakes = 0;
+let guessed = [];
+let wordStatus = null;
+
+function randomWord() {
+  answer = hariult[Math.floor(Math.random() * hariult.length)];
+}
+
+function generateButtons() {
+  let buttonsHTML = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
+    `
+      <button
+        class="btn btn-lg btn-primary m-2"
+        id='` + letter + `'
+        onClick="handleGuess('` + letter + `')"
+      >
+        ` + letter + `
+      </button>
+    `).join('');
+
+  document.getElementById('keyboard').innerHTML = buttonsHTML;
+}
+
+randomWord();
+generateButtons();
+
+</script>
+</body>
+</html>

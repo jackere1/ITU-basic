@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.h1 {
+    font-family: 'Merriweather';
+}
+.h2 {
+    color: #fff;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url("ulanbator.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.head {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #fff;
+    background-image: url("ub.jpg");
+    background-position: center;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    background: rgba(0, 0, 0, 1);
+    margin-bottom: 4%;
+}
+.list p{
+    margin: 1em;
+    font-size: 1.5em;
+    border: 1px solid #fff;
+    padding: 0.5em;
+}
+.active {
+    color: orange;
+}
+p {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+p:hover {
+    color: orange;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 1);
+
+}
+.container {
+    display: flex;
+    position: center;
+    justify-content: space-around;
+}
+.main {
+    position: absolute;
+    justify-content: space-around;
+    height: 1000px;
+    width: 80%; 
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0 10%;
+}
+.left {
+    height: 1000px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.right {
+    height: 1000px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+.medee1 {
+    margin: 10%;
+    width: 500px;
+    height: 300px;
+    background-image: url("medee1.jpg");
+    background-size: cover;
+    border: 10px solid orange;   
+}
+.medee2 {
+    margin: 10%;
+    border: 10px solid orange;   
+
+    width: 500px;
+    height: 300px;
+    background-image: url("medee2.jpg");
+    background-size: cover;
+}   
+.medee3 {
+    margin: 10%;
+    border: 10px solid orange;   
+
+    width: 500px;
+    height: 300px;
+    background-image: url("medee3.jpg");
+    background-size: cover;
+}
+.medee4 {
+    margin: 10%;
+    border: 10px solid orange;   
+
+    width: 500px;
+    height: 300px;
+    background-image: url("medee4.jpg");
+    background-size: cover;
+}
+
+.news a p {
+    text-decoration: overline overline;
+}
+
+.news:hover {
+    width: 530px;
+    height: 350px;
+    font-size: 1.5em;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>heddvgeer</title>
+</head>
+<body>
+<script>
+	var number = window.prompt("Tuhain ailiin tootiig oruulna uu?");
+	if(number <= 108){
+		var orts = parseInt(number / 36);
+		number = number - orts * 36;
+		var dawhar = parseInt(number / 4);
+		number = number - dawhar * 4;
+		orts ++;
+		dawhar ++;
+		if(number == 0){
+			number = 4;
+			dawhar --;
+		}
+		if(dawhar == 0){
+			dawhar = 9;
+			orts --;
+		}
+		document.write(orts+"-r ortsnii "+dawhar+"-r dawhriin "+number+"-r haalga");
+	}
+	else
+		document.write("Tiim ail baihgui");
+</script>
+</body>
+</html>

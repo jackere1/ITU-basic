@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap');
+
+* {
+    font-family: 'Architects Daughter', cursive;
+}
+html, body {
+    background-image: url("images/bg.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+.container {
+    height: 100%;
+    width: 90%;
+}
+
+.title, #question, #answer {
+    text-align: center;
+}
+
+#question, #answer, #keyboard {
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.life {
+    float: right;
+}
+
+#man {
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 180px;
+    padding-top: 20px;
+    height: 250px;
+    width: 150px;
+}
+
+#question {
+    font-size: 20px;
+}
+
+#answer {
+    font-size: 15px;
+}
+
+#keyboard {
+    text-align: center;
+    margin: 0 25%;
+}
+
+.button {
+    height: 30px;
+    width: 50px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    border: 1px solid black;
+    
+}
+.reset {
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+
+    margin: 10px 46%;
+}

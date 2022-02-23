@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>5r bodlogo</title>
+	<style>
+		.square1 {
+	  	height: 50px;
+	  	width: 50px;
+	  	left: 10px;
+	  	top: 10px;
+	  	background-color: green;
+	  	position: absolute;
+		}
+		.square2 {
+	  	height: 50px;
+	  	width: 50px;
+	  	right: 10px;
+	  	bottom: 10px;
+	  	background-color: red;
+	  	position: absolute;
+		}
+	</style>
+</head>
+<body>
+<div id="Dvrs"></div>
+
+<script>
+	var time = new Date();
+	var hour = time.getHours();
+	var container = '';
+
+	if(hour < 12)
+		container = container + '<div class="square1"></div>'
+	else
+		container = container + '<div class="square2"></div>'
+	document.getElementById("Dvrs").innerHTML = container;
+
+</script>
+</body>
+</html>

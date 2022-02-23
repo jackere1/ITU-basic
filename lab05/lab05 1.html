@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body{
+		background: gray;
+	}
+	</style>
+	<meta charset="utf-8">
+	<title>palindrome</title>
+</head>
+<body>
+<script>
+	let name = window.prompt("Name:");
+	var palin = '';
+	var urt;
+	urt = name.length;
+	while(urt >= 0){
+		palin = palin.concat(name.charAt(urt));
+		urt--;
+	}
+	document.write("Horvuulsen ner: "+palin+"\n");
+	document.write("Palindrome eseh: ");
+	if(name == palin)
+		document.write("Tiim");
+	else
+		document.write("Ugui");
+</script>
+</body>
+</html>
